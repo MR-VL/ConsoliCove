@@ -1,3 +1,4 @@
+``` text
 ConsoliCove/
 ├── client/                 # React + TypeScript (Vite)
 │   ├── public/
@@ -26,3 +27,4 @@ ConsoliCove/
 ├── README.md
 └── .gitignore
 
+```
