@@ -34,3 +34,14 @@ CREATE TABLE comments (
     CONSTRAINT CommentsAuthorFK FOREIGN KEY (username) REFERENCES users(username),
     CONSTRAINT CommentsPostFK FOREIGN KEY (post_id) REFERENCES posts(post_id)
 );
+
+CREATE TABLE votes (
+    vote_id UUID DEFAULT gen_random_uuid() NOT NULL,
+    username varchar(50) NOT NULL,
+    post_id UUID NOT NULL,
+    value INT NOT NULL CHECK (value IN (1, -1)),
+
+    CONSTRAINT VotesPK PRIMARY KEY (vote_id),
+    CONSTRAINT CommentsAuthorFK FOREIGN KEY (username) REFERENCES users(username),
+    CONSTRAINT CommentsPostFK FOREIGN KEY (post_id) REFERENCES posts(post_id)
+);
