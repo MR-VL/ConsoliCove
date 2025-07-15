@@ -22,3 +22,15 @@ CREATE TABLE posts (
     CONSTRAINT PostsPK PRIMARY KEY (post_id),
     CONSTRAINT PostsAuthorFK FOREIGN KEY (username) REFERENCES users(username)
 );
+
+CREATE TABLE comments (
+    comment_id UUID DEFAULT gen_random_uuid() NOT NULL,
+    content TEXT NOT NULL,
+    username varchar(50) NOT NULL,
+    post_id UUID NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW(),
+
+    CONSTRAINT CommentsPK PRIMARY KEY (comment_id),
+    CONSTRAINT CommentsAuthorFK FOREIGN KEY (username) REFERENCES users(username),
+    CONSTRAINT CommentsPostFK FOREIGN KEY (post_id) REFERENCES posts(post_id)
+);
