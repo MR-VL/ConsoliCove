@@ -92,3 +92,60 @@ Close file
 npm install
 npm run dev               # start backend on port 4000
 ```
+
+## .env Example
+
+```env
+# server/.env
+DATABASE_URL=postgresql://postgres:password@localhost:5433/consolicove
+JWT_SECRET=your_jwt_secret
+PORT=4000
+```
+
+
+### Frontend Setup
+
+```bash
+cd client
+npm install
+npm run dev               # start frontend on http://localhost:5173
+```
+
+---
+
+
+---
+
+## Features
+
+- User registration & login with JWT
+- Create/read posts
+- Comment on posts
+- Upvote/downvote system
+- Responsive frontend with React
+- Dockerized PostgreSQL
+- Raw SQL migrations (no ORM)
+
+---
+
+## Future Features
+
+- Categories
+- Post sorting (hot, new, top, controversial)
+- Nested comments
+- User profiles
+- Edit/delete posts
+
+---
+
+
+## Contributions
+This is a work in progress and you may find current tasks on the issues board on GitHub. 
+If you see something you wish to work on simply assign yourself to the task so we do not have duplicate pull requests.
+
+## License
+
+AGPL 3.0
+
+See License file for more information
+
