@@ -53,6 +53,20 @@ ConsoliCove/
 
 ---
 
+### ConsoliDev Integration
+
+ConsoliCove isn't just a Reddit clone—it's a **developer-first social hub** tightly integrated with [ConsoliDev](https://github.com/MR-VL/Consolidev), your all-in-one developer toolkit platform.
+
+**By using ConsoliCove you can:**
+
+- Earn **bonus perks** on ConsoliDev (like **1 free month of Premium**)
+- Connect with **like-minded developers** and collaborate on real-world bugs
+- Get **troubleshooting help** and **debugging tips** from peers
+- Share knowledge and stay updated with best practices
+- Engage in a moderated, developer oriented environment
+
+---
+
 # Setup Instructions
 
 ### Start PostgreSQL (Docker)
